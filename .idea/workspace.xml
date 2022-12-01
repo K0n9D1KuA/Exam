@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="43f2c0f4-8dc7-4b26-abd3-27b1d6ca2382" name="默认变更列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.9.RELEASE/spring-aop-5.1.9.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.9.RELEASE/spring-core-5.1.9.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/apache-maven-3.6.1-bin/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.1-bin\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2DRmBsxqN7qzdmXN3FqlLxkFOWN" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/__MACOSX/share-quartz" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\31617\Desktop\Exam\ExamSystem\src\main\resources\mapper" />
+      <recent name="C:\Users\31617\Desktop\Exam\ExamSystem\src\main\java\com\apxy\courseSystem\service" />
+      <recent name="C:\Users\31617\Desktop\Exam\ExamSystem\src\main\java\com\apxy\courseSystem" />
+      <recent name="C:\Users\31617\Desktop\Exam\ExamSystem\src\main\java\com\apxy\courseSystem\entity" />
+      <recent name="C:\Users\31617\Desktop\Exam\ExamSystem\src\main\java\com\apxy\courseSystem\service\impl" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\31617\Desktop\Exam\ExamSystem\src\main\resources\mapper" />
+      <recent name="C:\Users\31617\Desktop\Exam\ExamSystem\src\main\java\com\apxy\courseSystem\controller" />
+      <recent name="C:\Users\31617\Desktop\Exam\ExamSystem\src\main\java\com\apxy\courseSystem\service\impl" />
+      <recent name="C:\Users\31617\Desktop\Exam\ExamSystem\src\main\java\com\apxy\courseSystem\service" />
+      <recent name="C:\Users\31617\Desktop\Exam\ExamSystem\src\main\java\com\apxy\courseSystem" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.apxy.courseSystem.entity" />
+      <recent name="com.apxy.courseSystem.exceptionHandler" />
+      <recent name="com.apxy.courseSystem.config.security" />
+      <recent name="com.apxy.courseSystem.enuem" />
+      <recent name="com.apxy.courseSystem.util" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="CourseSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ExamSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.apxy.courseSystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.apxy.courseSystem.CourseSystemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.CourseSystemApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="43f2c0f4-8dc7-4b26-abd3-27b1d6ca2382" name="默认变更列表" comment="" />
+      <created>1660670140664</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660670140664</updated>
+      <workItem from="1660670143155" duration="3952000" />
+      <workItem from="1661504557380" duration="4310000" />
+      <workItem from="1661618923561" duration="2476000" />
+      <workItem from="1661698878726" duration="724000" />
+      <workItem from="1661870754772" duration="645000" />
+      <workItem from="1661905837280" duration="1890000" />
+      <workItem from="1661935143964" duration="8121000" />
+      <workItem from="1662000108775" duration="8799000" />
+      <workItem from="1662044694380" duration="3365000" />
+      <workItem from="1662083686865" duration="551000" />
+      <workItem from="1662084551151" duration="2706000" />
+      <workItem from="1662112902332" duration="15566000" />
+      <workItem from="1662176560047" duration="8609000" />
+      <workItem from="1662187011186" duration="6607000" />
+      <workItem from="1662205693696" duration="11800000" />
+      <workItem from="1662272860064" duration="11618000" />
+      <workItem from="1662347178875" duration="3555000" />
+      <workItem from="1662356354205" duration="15326000" />
+      <workItem from="1662430305061" duration="8308000" />
+      <workItem from="1662459535320" duration="14904000" />
+      <workItem from="1662514265399" duration="31295000" />
+      <workItem from="1662614740917" duration="13760000" />
+      <workItem from="1662689688767" duration="29365000" />
+      <workItem from="1662779445709" duration="4772000" />
+      <workItem from="1662786194790" duration="22925000" />
+      <workItem from="1662865303171" duration="16066000" />
+      <workItem from="1662900172143" duration="10894000" />
+      <workItem from="1662958410345" duration="26696000" />
+      <workItem from="1663034609118" duration="30036000" />
+      <workItem from="1663122066890" duration="7175000" />
+      <workItem from="1663135600838" duration="22533000" />
+      <workItem from="1663220329042" duration="2544000" />
+      <workItem from="1663224645425" duration="4200000" />
+      <workItem from="1663233452667" duration="1905000" />
+      <workItem from="1664345241266" duration="596000" />
+      <workItem from="1665595456203" duration="100000" />
+      <workItem from="1665993724583" duration="2001000" />
+      <workItem from="1666106890499" duration="2709000" />
+      <workItem from="1667466197509" duration="644000" />
+      <workItem from="1667641944571" duration="241000" />
+      <workItem from="1667642216226" duration="5803000" />
+      <workItem from="1667805460597" duration="2453000" />
+      <workItem from="1667877475089" duration="1389000" />
+      <workItem from="1667894463590" duration="1238000" />
+      <workItem from="1667915753129" duration="3470000" />
+      <workItem from="1668325216433" duration="10061000" />
+      <workItem from="1668564773515" duration="3278000" />
+      <workItem from="1668663343511" duration="5313000" />
+      <workItem from="1668673734460" duration="5024000" />
+      <workItem from="1668737403360" duration="3804000" />
+      <workItem from="1668828170207" duration="11188000" />
+      <workItem from="1668915861702" duration="2479000" />
+      <workItem from="1669767664289" duration="3853000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/service/WrongSubjectService.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/controller/RoleController.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/controller/FileUpLoadController.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/service/impl/PaperServiceImpl.java</url>
+          <line>358</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/controller/MemberController.java</url>
+          <line>156</line>
+          <properties class="com.apxy.courseSystem.controller.MemberController" method="getStudentListWithTeacher" />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/controller/RoleController.java</url>
+          <line>78</line>
+          <properties class="com.apxy.courseSystem.controller.RoleController" method="removeAuthorityToOneRole">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/controller/PaperController.java</url>
+          <line>119</line>
+          <properties class="com.apxy.courseSystem.controller.PaperController" method="addPaper" />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/service/DonePaperService.java</url>
+          <line>45</line>
+          <properties class="com.apxy.courseSystem.service.DonePaperService" method="getRankByPaperId" />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.springframework.security.authentication.UsernamePasswordAuthenticationToken" memberName="principal" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

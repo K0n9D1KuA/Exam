@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.apxy.courseSystem.dao.MenuDao">
+
+    <!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.apxy.courseSystem.entity.MenuEntity" id="menuMap">
+        <result property="id" column="id"/>
+        <result property="label" column="label"/>
+        <result property="icon" column="icon"/>
+        <result property="name" column="name"/>
+        <result property="url" column="url"/>
+        <result property="path" column="path"/>
+        <result property="parentId" column="parent_id"/>
+    </resultMap>
+    <!--    根据id 返回该用户所有权限信息-->
+    <select id="getPermissionsById" resultType="com.apxy.courseSystem.entity.MenuEntity">
+        SELECT me.icon,
+               me.id,
+               me.label,
+               me.parent_id,
+               me.path,
+               me.url,
+               me.`name`
+        FROM `member` m
+                 LEFT JOIN role_user ru ON ru.user_id = m.id
+                 LEFT JOIN role_menu rm ON rm.role_id = ru.role_id
+                 LEFT JOIN menu me ON me.id = rm.menu_id
+        WHERE m.id = #{id}
+    </select>
+
+
+</mapper>

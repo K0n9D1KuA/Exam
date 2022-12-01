@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.apxy.courseSystem.dao.DonePaperMapper">
+
+
+    <select id="getDonePaperDetail" resultType="com.apxy.courseSystem.entity.ScoreAndPeopleCount">
+        SELECT actual_score 'score', COUNT(*) 'peopleCount'
+        FROM `done_paper`
+        WHERE paper_id = #{paperId}
+        GROUP BY actual_score
+    </select>
+</mapper>

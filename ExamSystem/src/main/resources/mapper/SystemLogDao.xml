@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.apxy.courseSystem.dao.SystemLogDao">
+
+
+    <select id="queryPage" resultType="com.apxy.courseSystem.entity.vo.SystemLogVo">
+        SELECT sl.ip            AS ip,
+               sl.user_name     AS userName,
+               sl.business_name AS businessName,
+               sl.now_time      AS nowTime,
+               r.role           AS role,
+               sl.id            AS id
+        FROM `system_log` sl
+                 LEFT JOIN member m ON m.member_name = sl.user_name
+                 LEFT JOIN role_user ru ON ru.user_id = m.id
+                 LEFT JOIN role r ON r.id = ru.role_id
+        GROUP BY sl.now_time DESC ,
+	sl.id DESC,
+	sl.user_name,
+	sl.business_name,
+	r.role
+    </select>
+    <select id="queryPageAnother" resultType="com.apxy.courseSystem.entity.vo.SystemLogVo">
+        SELECT sl.ip            AS ip,
+               sl.user_name     AS userName,
+               sl.business_name AS businessName,
+               sl.now_time      AS nowTime,
+               r.role           AS role,
+               sl.id            AS id
+        FROM `system_log` sl
+                 LEFT JOIN member m ON m.member_name = sl.user_name
+                 LEFT JOIN role_user ru ON ru.user_id = m.id
+                 LEFT JOIN role r ON r.id = ru.role_id
+        GROUP BY sl.now_time ASC,
+	sl.id DESC,
+	sl.user_name,
+	sl.business_name,
+	r.role
+    </select>
+</mapper>
