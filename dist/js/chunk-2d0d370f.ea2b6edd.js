@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0d370f"],{"5d7a":function(n,e,t){"use strict";t.r(e);var a=function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("div",[n._v("我是商品管理页面")])},u=[],l={name:"Mall",data:function(){return{}}},c=l,r=t("2877"),d=Object(r["a"])(c,a,u,!1,null,null,null);e["default"]=d.exports}}]);
+//# sourceMappingURL=chunk-2d0d370f.ea2b6edd.js.map
