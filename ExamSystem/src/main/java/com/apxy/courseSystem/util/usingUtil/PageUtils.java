@@ -6,7 +6,7 @@
  * 版权所有，侵权必究！
  */
 
-package com.apxy.courseSystem.util;
+package com.apxy.courseSystem.util.usingUtil;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 
@@ -40,7 +40,7 @@ public class PageUtils implements Serializable {
 	 * 列表数据
 	 */
 	private List<?> list;
-	
+
 	/**
 	 * 分页
 	 * @param list        列表数据
@@ -106,5 +106,5 @@ public class PageUtils implements Serializable {
 	public void setList(List<?> list) {
 		this.list = list;
 	}
-	
+
 }

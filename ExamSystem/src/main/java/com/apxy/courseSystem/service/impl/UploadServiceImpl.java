@@ -17,7 +17,7 @@ import com.apxy.courseSystem.excelLisenner.StudentExcelLisener;
 import com.apxy.courseSystem.excelLisenner.TeacherExcelLisener;
 import com.apxy.courseSystem.service.MemberService;
 import com.apxy.courseSystem.service.UploadService;
-import com.apxy.courseSystem.util.SpringSecurityUtil;
+import com.apxy.courseSystem.util.usingUtil.SpringSecurityUtil;
 import org.joda.time.DateTime;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;

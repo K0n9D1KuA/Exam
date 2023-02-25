@@ -3,7 +3,7 @@ package com.apxy.courseSystem.exceptionHandler;
 
 
 import com.apxy.courseSystem.exception.LoginException;
-import com.apxy.courseSystem.util.R;
+import com.apxy.courseSystem.util.usingUtil.R;
 
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;

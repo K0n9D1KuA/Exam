@@ -1,22 +1,12 @@
 package com.apxy.courseSystem.controller;
 
-import com.apxy.courseSystem.entity.DoneSubject;
-
-import com.apxy.courseSystem.entity.MemberEntity;
-
-import com.apxy.courseSystem.entity.security.LoginUser;
-
 import com.apxy.courseSystem.service.DoneSubjectService;
 import com.apxy.courseSystem.service.MemberService;
 import com.apxy.courseSystem.service.UploadService;
-import com.apxy.courseSystem.util.R;
+import com.apxy.courseSystem.util.usingUtil.R;
 
-import com.apxy.courseSystem.util.SpringSecurityUtil;
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import org.springframework.beans.BeansException;
+import com.apxy.courseSystem.util.usingUtil.SpringSecurityUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,7 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
-import java.util.Objects;
 
 /**
  * 上传文件接口

@@ -1,7 +1,6 @@
 package com.apxy.courseSystem.controller;
 
 import java.util.Arrays;
-import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
@@ -10,9 +9,9 @@ import com.alibaba.fastjson.JSON;
 import com.apxy.courseSystem.constant.AuthServerConstant;
 import com.apxy.courseSystem.enuem.LoginEnuem;
 import com.apxy.courseSystem.service.MemberService;
-import com.apxy.courseSystem.util.Generate6Number;
-import com.apxy.courseSystem.util.PageUtils;
-import com.apxy.courseSystem.util.R;
+import com.apxy.courseSystem.util.usingUtil.Generate6RandomNumberUtil;
+import com.apxy.courseSystem.util.usingUtil.PageUtils;
+import com.apxy.courseSystem.util.usingUtil.R;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -110,7 +109,7 @@ public class MemberController {
             return R.error(LoginEnuem.EMAIL_EXIST_ERROR.getCode(), LoginEnuem.EMAIL_EXIST_ERROR.getMsg());
         }
         //随机生成验证码
-        String randCode = Generate6Number.randomCode();
+        String randCode = Generate6RandomNumberUtil.randomCode();
         //邮件的标题
         String subject = AuthServerConstant.subject;
         //邮件的内容

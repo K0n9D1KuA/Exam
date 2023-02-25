@@ -6,8 +6,9 @@
  * 版权所有，侵权必究！
  */
 
-package com.apxy.courseSystem.util;
+package com.apxy.courseSystem.util.usingUtil;
 
+import com.apxy.courseSystem.util.RRException;
 import org.apache.commons.lang.StringUtils;
 
 /**

@@ -2,8 +2,8 @@ package com.apxy.courseSystem.exception.security;
 
 import com.alibaba.fastjson.JSON;
 
-import com.apxy.courseSystem.util.R;
-import com.apxy.courseSystem.util.WebUtil;
+import com.apxy.courseSystem.util.usingUtil.R;
+import com.apxy.courseSystem.util.usingUtil.WebUtil;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.InsufficientAuthenticationException;
 import org.springframework.security.core.AuthenticationException;

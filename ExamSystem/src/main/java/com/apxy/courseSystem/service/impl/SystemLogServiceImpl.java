@@ -5,30 +5,20 @@ import com.apxy.courseSystem.constant.QueryConstant;
 import com.apxy.courseSystem.dao.SystemLogDao;
 
 import com.apxy.courseSystem.entity.SystemLogEntity;
-import com.apxy.courseSystem.entity.event.MemberEvent;
 import com.apxy.courseSystem.entity.event.SystemLogEvent;
-import com.apxy.courseSystem.entity.vo.MemberVo;
 import com.apxy.courseSystem.entity.vo.SystemLogVo;
-import com.apxy.courseSystem.service.RoleService;
-import com.apxy.courseSystem.service.RoleUserService;
 import com.apxy.courseSystem.service.SystemLogService;
-import com.apxy.courseSystem.util.Constant;
-import com.apxy.courseSystem.util.PageUtils;
-import com.apxy.courseSystem.util.Query;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.apxy.courseSystem.util.usingUtil.Constant;
+import com.apxy.courseSystem.util.usingUtil.PageUtils;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.event.EventListener;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 @Service
 @Slf4j

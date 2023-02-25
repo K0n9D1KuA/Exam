@@ -1,4 +1,4 @@
-package com.apxy.courseSystem.util;
+package com.apxy.courseSystem.util.usingUtil;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtBuilder;

@@ -1,13 +1,13 @@
 package com.apxy.courseSystem.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.apxy.courseSystem.util.PageUtils;
+import com.apxy.courseSystem.util.usingUtil.PageUtils;
 import com.apxy.courseSystem.entity.StudentTeacherEntity;
 
 import java.util.Map;
 
 /**
- * 
+ *
  *
  * @author apxy
  * @email 3179735066@qq.com

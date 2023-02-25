@@ -1,18 +1,15 @@
 package com.apxy.courseSystem.service.impl;
 
 import com.apxy.courseSystem.dao.MenuDao;
-import com.apxy.courseSystem.entity.MemberEntity;
 import com.apxy.courseSystem.entity.MenuEntity;
 import com.apxy.courseSystem.entity.vo.MenuVo;
-import com.apxy.courseSystem.service.MemberService;
 
 import com.apxy.courseSystem.service.MenuService;
-import com.apxy.courseSystem.util.PageUtils;
-import com.apxy.courseSystem.util.Query;
+import com.apxy.courseSystem.util.usingUtil.PageUtils;
+import com.apxy.courseSystem.util.usingUtil.Query;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
-import java.awt.*;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;

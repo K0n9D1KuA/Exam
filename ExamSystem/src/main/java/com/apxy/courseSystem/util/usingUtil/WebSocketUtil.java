@@ -1,4 +1,4 @@
-package com.apxy.courseSystem.util;
+package com.apxy.courseSystem.util.usingUtil;
 
 import cn.hutool.json.JSONUtil;
 import com.alibaba.fastjson.JSON;
@@ -8,17 +8,12 @@ import com.apxy.courseSystem.constant.PaperConstant;
 import com.apxy.courseSystem.constant.SubjectConstant;
 import com.apxy.courseSystem.constant.WebSocketConstant;
 import com.apxy.courseSystem.entity.*;
-import com.apxy.courseSystem.entity.event.UpdateWrongSubjectEvent;
-import com.apxy.courseSystem.entity.redis.WorseSubject;
 import com.apxy.courseSystem.entity.socket.SocketMsg;
 import com.apxy.courseSystem.entity.vo.SubjectVoEntity;
 import com.apxy.courseSystem.service.*;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import net.sf.jsqlparser.statement.select.SubJoin;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
-import org.springframework.data.redis.core.BoundHashOperations;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
 

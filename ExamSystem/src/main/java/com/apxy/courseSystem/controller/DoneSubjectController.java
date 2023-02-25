@@ -5,7 +5,7 @@ import com.alibaba.fastjson.JSON;
 import com.apxy.courseSystem.entity.DoneSubject;
 import com.apxy.courseSystem.entity.vo.DoneSubjectVo;
 import com.apxy.courseSystem.service.DoneSubjectService;
-import com.apxy.courseSystem.util.R;
+import com.apxy.courseSystem.util.usingUtil.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;

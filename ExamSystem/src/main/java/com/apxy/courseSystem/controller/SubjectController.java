@@ -10,13 +10,11 @@ import com.apxy.courseSystem.constant.AliyunOssConstant;
 import com.apxy.courseSystem.constant.AuthServerConstant;
 
 import com.apxy.courseSystem.entity.DonePracticeSubject;
-import com.apxy.courseSystem.entity.DoneSubject;
-import com.apxy.courseSystem.entity.SubjectPaper;
 import com.apxy.courseSystem.entity.vo.DoneSubjectVo;
 import com.apxy.courseSystem.entity.vo.SubjectVoEntity;
-import com.apxy.courseSystem.util.PageUtils;
-import com.apxy.courseSystem.util.R;
-import com.apxy.courseSystem.util.SpringSecurityUtil;
+import com.apxy.courseSystem.util.usingUtil.PageUtils;
+import com.apxy.courseSystem.util.usingUtil.R;
+import com.apxy.courseSystem.util.usingUtil.SpringSecurityUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,8 +24,6 @@ import org.springframework.web.bind.annotation.*;
 
 import com.apxy.courseSystem.entity.SubjectEntity;
 import com.apxy.courseSystem.service.SubjectService;
-
-import javax.swing.*;
 
 
 /**

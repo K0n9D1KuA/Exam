@@ -1,23 +1,19 @@
 package com.apxy.courseSystem.service.impl;
 
 import com.apxy.courseSystem.constant.QueryConstant;
-import com.apxy.courseSystem.constant.SubjectConstant;
 import com.apxy.courseSystem.entity.MemberEntity;
 import com.apxy.courseSystem.entity.vo.SubjectVo;
-import com.apxy.courseSystem.entity.vo.SubjectVoEntity;
 import com.apxy.courseSystem.service.MemberService;
-import com.apxy.courseSystem.util.SpringSecurityUtil;
+import com.apxy.courseSystem.util.usingUtil.SpringSecurityUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
@@ -25,8 +21,8 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.apxy.courseSystem.dao.SubjectDao;
 import com.apxy.courseSystem.entity.SubjectEntity;
 import com.apxy.courseSystem.service.SubjectService;
-import com.apxy.courseSystem.util.PageUtils;
-import com.apxy.courseSystem.util.Query;
+import com.apxy.courseSystem.util.usingUtil.PageUtils;
+import com.apxy.courseSystem.util.usingUtil.Query;
 
 @Service("subjectService")
 public class SubjectServiceImpl extends ServiceImpl<SubjectDao, SubjectEntity> implements SubjectService {

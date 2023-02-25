@@ -4,31 +4,25 @@ package com.apxy.courseSystem.service.impl;
 import com.alibaba.fastjson.JSON;
 import com.apxy.courseSystem.constant.AuthServerConstant;
 import com.apxy.courseSystem.constant.PaperConstant;
-import com.apxy.courseSystem.constant.SubjectConstant;
 import com.apxy.courseSystem.dao.DoneSubjectDao;
 import com.apxy.courseSystem.entity.DonePaperEntity;
 import com.apxy.courseSystem.entity.DoneSubject;
 import com.apxy.courseSystem.entity.event.DoneSubjectImageEvent;
-import com.apxy.courseSystem.entity.event.MemberEvent;
 import com.apxy.courseSystem.entity.vo.DoneSubjectVo;
 import com.apxy.courseSystem.entity.vo.SubjectVoEntity;
 import com.apxy.courseSystem.service.DonePaperService;
 import com.apxy.courseSystem.service.DoneSubjectService;
-import com.apxy.courseSystem.util.SpringSecurityUtil;
+import com.apxy.courseSystem.util.usingUtil.SpringSecurityUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.BeanUtils;
-import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.event.EventListener;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Objects;
 import java.util.stream.Collectors;
 
 @Service

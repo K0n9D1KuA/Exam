@@ -1,11 +1,10 @@
 package com.apxy.courseSystem.service;
 
-import com.apxy.courseSystem.entity.vo.PaperVo;
 import com.apxy.courseSystem.entity.vo.PaperVoEntity;
 import com.apxy.courseSystem.entity.vo.SubjectVoEntity;
-import com.apxy.courseSystem.util.R;
+import com.apxy.courseSystem.util.usingUtil.R;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.apxy.courseSystem.util.PageUtils;
+import com.apxy.courseSystem.util.usingUtil.PageUtils;
 import com.apxy.courseSystem.entity.PaperEntity;
 
 import java.util.List;

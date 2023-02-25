@@ -11,15 +11,11 @@ import com.apxy.courseSystem.entity.WrongSubjectEntity;
 import com.apxy.courseSystem.entity.vo.WrongSubjectVo;
 import com.apxy.courseSystem.service.SubjectService;
 import com.apxy.courseSystem.service.WrongSubjectService;
-import com.apxy.courseSystem.util.SpringSecurityUtil;
-import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
+import com.apxy.courseSystem.util.usingUtil.SpringSecurityUtil;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import org.joda.time.LocalDateTime;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import java.util.*;

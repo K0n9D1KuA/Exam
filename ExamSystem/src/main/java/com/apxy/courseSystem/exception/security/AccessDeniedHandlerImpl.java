@@ -2,8 +2,8 @@ package com.apxy.courseSystem.exception.security;
 
 import com.alibaba.fastjson.JSON;
 
-import com.apxy.courseSystem.util.R;
-import com.apxy.courseSystem.util.WebUtil;
+import com.apxy.courseSystem.util.usingUtil.R;
+import com.apxy.courseSystem.util.usingUtil.WebUtil;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.stereotype.Component;

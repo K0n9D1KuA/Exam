@@ -14,8 +14,8 @@ import com.apxy.courseSystem.entity.vo.PaperVo;
 import com.apxy.courseSystem.entity.vo.PaperVoEntity;
 import com.apxy.courseSystem.entity.vo.SubjectVoEntity;
 import com.apxy.courseSystem.service.*;
-import com.apxy.courseSystem.util.R;
-import com.apxy.courseSystem.util.SpringSecurityUtil;
+import com.apxy.courseSystem.util.usingUtil.R;
+import com.apxy.courseSystem.util.usingUtil.SpringSecurityUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
@@ -38,8 +38,8 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
 import com.apxy.courseSystem.dao.PaperDao;
 
-import com.apxy.courseSystem.util.PageUtils;
-import com.apxy.courseSystem.util.Query;
+import com.apxy.courseSystem.util.usingUtil.PageUtils;
+import com.apxy.courseSystem.util.usingUtil.Query;
 
 @Service("paperService")
 public class PaperServiceImpl extends ServiceImpl<PaperDao, PaperEntity> implements PaperService {

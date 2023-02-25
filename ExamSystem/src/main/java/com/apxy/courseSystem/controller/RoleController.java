@@ -2,13 +2,12 @@ package com.apxy.courseSystem.controller;
 
 
 import com.apxy.courseSystem.entity.MenuEntity;
-import com.apxy.courseSystem.entity.Role;
 import com.apxy.courseSystem.entity.RoleMenuEntity;
 import com.apxy.courseSystem.entity.vo.MenuVo;
 import com.apxy.courseSystem.service.MenuService;
 import com.apxy.courseSystem.service.RoleMenuService;
 import com.apxy.courseSystem.service.RoleService;
-import com.apxy.courseSystem.util.R;
+import com.apxy.courseSystem.util.usingUtil.R;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

@@ -3,12 +3,11 @@ package com.apxy.courseSystem.filter;
 
 import com.alibaba.fastjson.JSON;
 import com.apxy.courseSystem.constant.AuthServerConstant;
-import com.apxy.courseSystem.entity.MemberEntity;
 import com.apxy.courseSystem.entity.security.LoginUser;
 import com.apxy.courseSystem.enuem.LoginEnuem;
-import com.apxy.courseSystem.util.JwtUtil;
-import com.apxy.courseSystem.util.R;
-import com.apxy.courseSystem.util.WebUtil;
+import com.apxy.courseSystem.util.usingUtil.JwtUtil;
+import com.apxy.courseSystem.util.usingUtil.R;
+import com.apxy.courseSystem.util.usingUtil.WebUtil;
 
 import io.jsonwebtoken.Claims;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +23,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Arrays;
 
 /**
  * 拦截器

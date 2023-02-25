@@ -4,8 +4,8 @@ import java.util.Arrays;
 import java.util.Map;
 
 
-import com.apxy.courseSystem.util.PageUtils;
-import com.apxy.courseSystem.util.R;
+import com.apxy.courseSystem.util.usingUtil.PageUtils;
+import com.apxy.courseSystem.util.usingUtil.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,7 +20,7 @@ import com.apxy.courseSystem.service.StudentPaparService;
 
 
 /**
- * 
+ *
  *
  * @author apxy
  * @email 3179735066@qq.com

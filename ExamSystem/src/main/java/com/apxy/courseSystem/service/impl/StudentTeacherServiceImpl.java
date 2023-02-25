@@ -10,8 +10,8 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.apxy.courseSystem.dao.StudentTeacherDao;
 import com.apxy.courseSystem.entity.StudentTeacherEntity;
 import com.apxy.courseSystem.service.StudentTeacherService;
-import com.apxy.courseSystem.util.PageUtils;
-import com.apxy.courseSystem.util.Query;
+import com.apxy.courseSystem.util.usingUtil.PageUtils;
+import com.apxy.courseSystem.util.usingUtil.Query;
 
 @Service("studentTeacherService")
 public class StudentTeacherServiceImpl extends ServiceImpl<StudentTeacherDao, StudentTeacherEntity> implements StudentTeacherService {

@@ -4,7 +4,7 @@ package com.apxy.courseSystem.controller;
 import com.apxy.courseSystem.entity.vo.DonePaperVo;
 import com.apxy.courseSystem.entity.vo.RankVo;
 import com.apxy.courseSystem.service.DonePaperService;
-import com.apxy.courseSystem.util.R;
+import com.apxy.courseSystem.util.usingUtil.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;

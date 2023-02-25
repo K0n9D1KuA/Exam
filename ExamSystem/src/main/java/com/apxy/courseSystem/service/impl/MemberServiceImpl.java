@@ -1,18 +1,16 @@
 package com.apxy.courseSystem.service.impl;
 
-import com.alibaba.excel.EasyExcel;
 import com.apxy.courseSystem.constant.AuthServerConstant;
 import com.apxy.courseSystem.dao.MemberDao;
 import com.apxy.courseSystem.entity.*;
 import com.apxy.courseSystem.entity.event.MemberEvent;
 import com.apxy.courseSystem.entity.excel.Member;
 import com.apxy.courseSystem.entity.vo.MemberVo;
-import com.apxy.courseSystem.excelLisenner.StudentExcelLisener;
 import com.apxy.courseSystem.service.MemberService;
 import com.apxy.courseSystem.service.RoleService;
 import com.apxy.courseSystem.service.RoleUserService;
-import com.apxy.courseSystem.util.Constant;
-import com.apxy.courseSystem.util.SpringSecurityUtil;
+import com.apxy.courseSystem.util.usingUtil.Constant;
+import com.apxy.courseSystem.util.usingUtil.SpringSecurityUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,8 +33,8 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
 
-import com.apxy.courseSystem.util.PageUtils;
-import com.apxy.courseSystem.util.Query;
+import com.apxy.courseSystem.util.usingUtil.PageUtils;
+import com.apxy.courseSystem.util.usingUtil.Query;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service("studentService")
