@@ -30,6 +30,15 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
+
+/**
+ * @author K0n9D1KuA
+ * @version 1.0
+ * @description: 日志aop切面类
+ * @email 3161788646@qq.com
+ * @date 2023/1/9 22:25
+ */
+
 @Aspect
 @Component
 @Slf4j
@@ -46,7 +55,7 @@ public class LogAspect implements ApplicationContextAware {
     }
 
     /**
-     * 环绕通知  指定切点
+     * 环绕通知
      */
     @Around("pt()")
     public Object printLog(ProceedingJoinPoint joinPoint) throws Throwable {
@@ -74,34 +83,23 @@ public class LogAspect implements ApplicationContextAware {
         UserInfoVo userInfo = (UserInfoVo) r.get("userInfo");
         systemLogEntity.setUserName(userInfo.getMemberName());
         log.info("来自于ip:{}的{}用户于:{}时刻访问了url:{} 其访问接口功能为:{} ", systemLogEntity.getIp(), systemLogEntity.getUserName(), systemLogEntity.getNowTime(), systemLogEntity.getUrl(), systemLogEntity.getBusinessName());
-        //发布时间 异步更新日志
+        //发布事件 通知异步更新日志
         applicationContext.publishEvent(new SystemLogEvent(this, systemLogEntity));
         log.info("主线程完毕啦---------------------------------");
     }
 
     private void before(ProceedingJoinPoint joinPoint, SystemLogEntity systemLogEntity) {
-//        DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//注意月和小时的格式为两个大写字母
-//        java.util.Date date = new Date();//获得当前时间
-//        String currentTime = df.format(date);
-
         systemLogEntity.setNowTime(new Date());
-        //从当前线程中获取到request对象
         ServletRequestAttributes requestAttributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = null;
         if (requestAttributes != null) {
             request = requestAttributes.getRequest();
         }
-        //获得被增强方法上的注解对象
+        //获取加在方法上的注解
         SystemLog systemLog = getSystemLog(joinPoint);
-
-        //打印信息
-//
-        //设置接口功能
         systemLogEntity.setBusinessName(systemLog.businessName());
-        // 打印请求 URL
+        //请求的url
         systemLogEntity.setUrl(request.getRequestURI());
-        // 打印描述信息
-        log.info("BusinessName   : {}", systemLog.businessName());
         // 打印 Http method
         if (request != null) {
             systemLogEntity.setMethod("GET".equals(request.getMethod()) ? 0 : 1);

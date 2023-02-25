@@ -4,7 +4,94 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43f2c0f4-8dc7-4b26-abd3-27b1d6ca2382" name="默认变更列表" comment="" />
+    <list default="true" id="43f2c0f4-8dc7-4b26-abd3-27b1d6ca2382" name="默认变更列表" comment="学生端app提交">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamSystem/src/com/qyh/ExamSystemApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamSystem/src/com/qyh/util/R.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/annotation/SystemLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/annotation/SystemLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/aspect/LogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/aspect/LogAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/config/ClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/config/redisConfig/ClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/config/commonConfig/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/controller/DonePaperController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/controller/DonePaperController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/controller/PaperController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/controller/PaperController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/service/DonePaperService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/service/DonePaperService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/service/impl/DonePaperServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/service/impl/DonePaperServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/service/impl/PaperServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/service/impl/PaperServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamSystem/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ExamSystem/src/main/resources/application-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamSystem/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ExamSystem/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__UNI__1EDA127__20221205115612.apk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/app.5af56839.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/chunk-0e273ac4.25a17502.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/chunk-19dac4b4.26b32c2b.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/chunk-1a4f440d.06180823.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/chunk-2163976a.19bcdf63.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/chunk-253855ba.cc2ee22a.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/chunk-2a8005c3.52fa140d.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/chunk-476d3d5a.07d093ec.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/chunk-5bb12280.6a1ef0b4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/chunk-6edd2d3d.0d9fe00c.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/chunk-74cfd786.fa0d6fc7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/chunk-a9e5b15c.5d208c57.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/chunk-ae49856c.b7746b0e.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/chunk-da574ee6.40777132.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/chunk-vendors.a16c4353.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/element-icons.535877f5.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/element-icons.732389de.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/user.27e729e0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/app.573bf63e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/app.573bf63e.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-0e273ac4.a3f97780.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-0e273ac4.a3f97780.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-1554c658.c5d61f1d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-1554c658.c5d61f1d.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-19dac4b4.af391ed3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-19dac4b4.af391ed3.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-1a4f440d.f89bfdd2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-1a4f440d.f89bfdd2.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-2163976a.59fa5f68.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-2163976a.59fa5f68.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-253855ba.232fe8f1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-253855ba.232fe8f1.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-2a8005c3.6100a8c7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-2a8005c3.6100a8c7.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-2d0b9a30.d88c3c51.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-2d0b9a30.d88c3c51.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-2d0d370f.ea2b6edd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-2d0d370f.ea2b6edd.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-2d20fb38.bd474d95.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-2d20fb38.bd474d95.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-2d2133e5.b83943b0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-2d2133e5.b83943b0.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-2d216214.a9f4880f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-2d216214.a9f4880f.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-2d22bdd8.2a4d3bfb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-2d22bdd8.2a4d3bfb.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-476d3d5a.e25d1165.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-476d3d5a.e25d1165.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-5bb12280.31c3b4d7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-5bb12280.31c3b4d7.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-6eb196aa.3cd64f24.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-6eb196aa.3cd64f24.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-6edd2d3d.e75810bc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-6edd2d3d.e75810bc.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-74cfd786.72f528b5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-74cfd786.72f528b5.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-7cc79236.a0ee0820.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-7cc79236.a0ee0820.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-a9e5b15c.fb38f16a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-a9e5b15c.fb38f16a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-ae49856c.c404fd22.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-ae49856c.c404fd22.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-da574ee6.970e776f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-da574ee6.970e776f.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-vendors.7fc3fb05.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-vendors.7fc3fb05.js.map" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +106,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -31,6 +121,9 @@
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.9.RELEASE/spring-aop-5.1.9.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.9.RELEASE/spring-core-5.1.9.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class" root0="SKIP_INSPECTION" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -40,36 +133,37 @@
     </option>
   </component>
   <component name="ProjectId" id="2DRmBsxqN7qzdmXN3FqlLxkFOWN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/__MACOSX/share-quartz" />
-    <property name="project.structure.last.edited" value="模块" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/31617/Desktop/project/Exam&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;80b7b089b37613153fb3ddb2c6743749&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\31617\Desktop\project\Exam" />
+      <recent name="C:\Users\31617\Desktop\项目\Exam" />
       <recent name="C:\Users\31617\Desktop\Exam\ExamSystem\src\main\resources\mapper" />
       <recent name="C:\Users\31617\Desktop\Exam\ExamSystem\src\main\java\com\apxy\courseSystem\service" />
       <recent name="C:\Users\31617\Desktop\Exam\ExamSystem\src\main\java\com\apxy\courseSystem" />
-      <recent name="C:\Users\31617\Desktop\Exam\ExamSystem\src\main\java\com\apxy\courseSystem\entity" />
-      <recent name="C:\Users\31617\Desktop\Exam\ExamSystem\src\main\java\com\apxy\courseSystem\service\impl" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\31617\Desktop\Exam\ExamSystem\src\main\resources\mapper" />
@@ -92,13 +186,13 @@
   <component name="RunManager">
     <configuration name="CourseSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="ExamSystem" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.apxy.courseSystem.CourseSystemApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.apxy.courseSystem.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.apxy.courseSystem.CourseSystemApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -170,11 +264,66 @@
       <workItem from="1668828170207" duration="11188000" />
       <workItem from="1668915861702" duration="2479000" />
       <workItem from="1669767664289" duration="3853000" />
+      <workItem from="1669902585408" duration="701000" />
+      <workItem from="1669967235130" duration="663000" />
+      <workItem from="1670086600729" duration="1758000" />
+      <workItem from="1670174704152" duration="610000" />
+      <workItem from="1670226284860" duration="1641000" />
+      <workItem from="1670734785735" duration="491000" />
+      <workItem from="1670907638625" duration="2681000" />
+      <workItem from="1671010791154" duration="117000" />
+      <workItem from="1671033958740" duration="1031000" />
+      <workItem from="1671035181972" duration="595000" />
+      <workItem from="1671158379833" duration="2908000" />
+      <workItem from="1671870673737" duration="2597000" />
+      <workItem from="1672058612753" duration="2197000" />
+      <workItem from="1672311494946" duration="638000" />
+      <workItem from="1673182556874" duration="1995000" />
+      <workItem from="1673273806057" duration="770000" />
+      <workItem from="1675148134518" duration="3029000" />
+      <workItem from="1675234990796" duration="4416000" />
+      <workItem from="1675694248050" duration="753000" />
+      <workItem from="1676010134021" duration="2124000" />
+      <workItem from="1676106500505" duration="1916000" />
+      <workItem from="1676868289104" duration="5267000" />
+      <workItem from="1676990762884" duration="841000" />
+      <workItem from="1677307351218" duration="3650000" />
     </task>
+    <task id="LOCAL-00001" summary="提交老师端/管理员端代码">
+      <created>1670928759416</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670928759416</updated>
+    </task>
+    <task id="LOCAL-00002" summary="学生端app提交">
+      <created>1670928857117</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670928857117</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="提交老师端/管理员端代码" />
+    <MESSAGE value="学生端app提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="学生端app提交" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -196,34 +345,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/service/impl/PaperServiceImpl.java</url>
-          <line>358</line>
+          <line>357</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/controller/MemberController.java</url>
           <line>156</line>
-          <properties class="com.apxy.courseSystem.controller.MemberController" method="getStudentListWithTeacher" />
+          <properties class="com.apxy.courseSystem.controller.MemberController" />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/controller/RoleController.java</url>
           <line>78</line>
-          <properties class="com.apxy.courseSystem.controller.RoleController" method="removeAuthorityToOneRole">
+          <properties class="com.apxy.courseSystem.controller.RoleController">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/controller/PaperController.java</url>
-          <line>119</line>
-          <properties class="com.apxy.courseSystem.controller.PaperController" method="addPaper" />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/ExamSystem/src/main/java/com/apxy/courseSystem/service/DonePaperService.java</url>
-          <line>45</line>
-          <properties class="com.apxy.courseSystem.service.DonePaperService" method="getRankByPaperId" />
-          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -20,7 +20,7 @@ public interface DonePaperService extends IService<DonePaperEntity> {
      * @param donePaperId 试卷id
      * @return 该已做试卷下所有的已做题目
      */
-    List<DoneSubjectVo> getAllDoneSubjectsWithDonePaperId(Long donePaperId);
+    List<DoneSubjectVo> getAllDoneSubjectsByDonePaperId(Long donePaperId);
 
     /**
      * 描述：根据已做试卷id 获得 已做试卷 + 该试卷下所包含的所有题目

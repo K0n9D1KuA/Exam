@@ -206,7 +206,6 @@ public class PaperServiceImpl extends ServiceImpl<PaperDao, PaperEntity> impleme
      * @param subjectVoEntity 要修改的题目
      */
     private void changeSubject(Long index, SubjectVoEntity subjectVoEntity) {
-
         stringRedisTemplate.opsForList().set(this.getKey(), index, JSON.toJSONString(subjectVoEntity));
     }
 

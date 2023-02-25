@@ -47,14 +47,14 @@ public class DonePaperController {
         return R.ok().put("data", ret).put("total", ret.size());
     }
 
-    /**
-     * 考试成绩分析
-     */
-    @GetMapping("/ScoreAnalysis")
-    public R getScoreAnalysis() {
-//        return donePaperService.getScoreAnalysis
-        return null;
-    }
+//    /**
+//     * 考试成绩分析
+//     */
+//    @GetMapping("/ScoreAnalysis")
+//    public R getScoreAnalysis() {
+//        return donePaperService.getScoreAnalysis();
+//        return null;
+//    }
 
     /**
      * 获得已做过试卷

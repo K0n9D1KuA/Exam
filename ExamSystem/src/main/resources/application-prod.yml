@@ -44,15 +44,14 @@ spring:
         wall:
           config:
             multi-statement-allow: true
-      url: jdbc:mysql://175.178.189.129:3306/exam_system?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
-      password: dsjaiodjasdsajdsadj213j14i1j451j423k5j1345jn12k5j,
+      url: jdbc:mysql://mysql:3306/exam_system?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=GMT%2B8
+      password: jdsioadjasjdisabbndjsaxx,djsa312321sihjdajidsadsja..213
       username: root
   #      password: root
 
   redis:
-    host: 175.178.189.129
+    host: redis
     port: 6379
-    password: djsaiodjias4556564..3lk23o1dskja546dsaopj
     # 连接超时时间
     timeout: 10s
     lettuce:

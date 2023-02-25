@@ -231,7 +231,7 @@ public class PaperController {
     @GetMapping("/getAllDonePapers/{id}")
     public R getDonePaper(@PathVariable Long id) {
         //获得改试卷下所有的题目
-        List<DoneSubjectVo> retList = donePaperService.getAllDoneSubjectsWithDonePaperId(id);
+        List<DoneSubjectVo> retList = donePaperService.getAllDoneSubjectsByDonePaperId(id);
         //再获得试卷
         DonePaperEntity donePaperEntity = donePaperService.getById(id);
         DonePaperVo donePaperVo = new DonePaperVo();

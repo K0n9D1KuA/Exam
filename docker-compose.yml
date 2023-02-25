@@ -1,0 +1,18 @@
+version: "3"
+services:
+ mysql:
+  image: mysql:5.7.27
+  ports:
+    - 3306:3306
+  environment: # 设置root用户的密码
+    - MYSQL_ROOT_PASSWORD=jdsioadjasjdisabbndjsaxx,djsa312321sihjdajidsadsja..213
+ redis: # 无须把redis暴露到公网端口
+  image: redis:latest
+ exam:
+  image: exam:latest
+  build: . # 表示以当前目录下的Dockerfile开始构建镜像
+  ports:
+    - 11000:11000
+  depends_on: # 依赖与mysql、redis，其实可以不填，默认已经表示可以
+    - mysql
+    - redis
