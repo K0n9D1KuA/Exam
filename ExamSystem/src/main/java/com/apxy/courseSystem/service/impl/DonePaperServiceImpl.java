@@ -34,8 +34,6 @@ import java.util.stream.Collectors;
 @Service
 public class DonePaperServiceImpl extends ServiceImpl<DonePaperMapper, DonePaperEntity> implements DonePaperService {
     @Autowired
-    private SpringSecurityUtil springSecurityUtil;
-    @Autowired
     private MemberService memberService;
     @Lazy
     @Autowired
@@ -479,7 +477,7 @@ public class DonePaperServiceImpl extends ServiceImpl<DonePaperMapper, DonePaper
 
 
     private Long getMemberId() {
-        return springSecurityUtil.getUser().getMemberEntity().getId().longValue();
+        return SpringSecurityUtil.getUser().getMemberEntity().getId().longValue();
     }
 
 }

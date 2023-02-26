@@ -40,8 +40,7 @@ import java.util.Date;
 public class LogAspect implements ApplicationContextAware {
 
     private ApplicationContext applicationContext;
-    @Autowired
-    private SpringSecurityUtil springSecurityUtil;
+
 
     //切点
     @Pointcut("@annotation(com.apxy.courseSystem.annotation.SystemLog)")

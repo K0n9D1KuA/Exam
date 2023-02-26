@@ -36,8 +36,6 @@ public class UploadServiceImpl implements UploadService, ApplicationContextAware
     AliyunOssConstant aliyunOssConstant;
     ApplicationContext applicationContext;
     @Autowired
-    private SpringSecurityUtil springSecurityUtil;
-    @Autowired
     private MemberService memberService;
 
     /**
@@ -113,7 +111,7 @@ public class UploadServiceImpl implements UploadService, ApplicationContextAware
         String avatarUrl = "";
         try {
             avatarUrl = this.upLoadFile(file);
-            MemberEntity memberEntity = springSecurityUtil.getUser().getMemberEntity();
+            MemberEntity memberEntity = SpringSecurityUtil.getUser().getMemberEntity();
             memberEntity.setAvatar(avatarUrl);
             //发布事件 解耦
             applicationContext.publishEvent(new MemberEvent(memberEntity, this));

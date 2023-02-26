@@ -30,8 +30,6 @@ public class DoneSubjectServiceimpl extends ServiceImpl<DoneSubjectDao, DoneSubj
     @Autowired
     private DonePaperService donePaperService;
     @Autowired
-    private SpringSecurityUtil springSecurityUtil;
-    @Autowired
     private StringRedisTemplate stringRedisTemplate;
 
 
@@ -91,7 +89,7 @@ public class DoneSubjectServiceimpl extends ServiceImpl<DoneSubjectDao, DoneSubj
      * 获得当前学生的id
      */
     private Integer getId() {
-        return springSecurityUtil.getUser().getMemberEntity().getId();
+        return SpringSecurityUtil.getUser().getMemberEntity().getId();
     }
 
 

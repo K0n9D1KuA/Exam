@@ -35,8 +35,7 @@ public class PaperController {
     private MemberService memberService;
     @Autowired
     private DonePaperService donePaperService;
-    @Autowired
-    private StringRedisTemplate stringRedisTemplate;
+
 
     /**
      * 列表

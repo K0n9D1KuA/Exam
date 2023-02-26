@@ -31,6 +31,7 @@ import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.swing.*;
 import javax.validation.Valid;
 import java.util.List;
 import java.util.Map;
@@ -56,8 +57,7 @@ public class LoginController {
     private AuthenticationManager authenticationManager;
     @Autowired
     private MenuService menuService;
-    @Autowired
-    private SpringSecurityUtil springSecurityUtil;
+
 
 
     /**
@@ -128,7 +128,7 @@ public class LoginController {
         String key = AuthServerConstant.LOGIN_USER + uuid;
         stringRedisTemplate.delete(key);
         UserInfoVo userInfoVo = new UserInfoVo();
-        LoginUser loginUser = springSecurityUtil.getUser();
+        LoginUser loginUser = SpringSecurityUtil.getUser();
         MemberEntity memberEntity = loginUser.getMemberEntity();
         //根据用户id查询其对应的角色
         //属性拷贝

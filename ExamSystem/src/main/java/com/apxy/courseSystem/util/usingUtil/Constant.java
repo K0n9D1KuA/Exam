@@ -10,8 +10,6 @@ package com.apxy.courseSystem.util.usingUtil;
 
 
 
-import com.apxy.courseSystem.validator.group.QcloudGroup;
-import com.apxy.courseSystem.validator.group.QiniuGroup;
 
 import java.util.Optional;
 import java.util.stream.Stream;

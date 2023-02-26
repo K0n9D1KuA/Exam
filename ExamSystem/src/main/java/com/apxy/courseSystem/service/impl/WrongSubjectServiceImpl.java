@@ -24,8 +24,7 @@ import java.util.stream.Collectors;
 
 @Service
 public class WrongSubjectServiceImpl extends ServiceImpl<WrongSubjectDao, WrongSubjectEntity> implements WrongSubjectService {
-    @Autowired
-    private SpringSecurityUtil springSecurityUtil;
+
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
     @Autowired
@@ -37,7 +36,7 @@ public class WrongSubjectServiceImpl extends ServiceImpl<WrongSubjectDao, WrongS
     public List<WrongSubjectVo> getAll() {
 
         //获得当前老师姓名
-        String teacherName = springSecurityUtil.getUser().getMemberEntity().getMemberName();
+        String teacherName = SpringSecurityUtil.getUser().getMemberEntity().getMemberName();
         //获得redis的key
         String key = WrongSubjectConstant.WRONG_SUBJECT_PREFIX_KEY + teacherName;
         //去redis中查询数据
@@ -75,20 +74,7 @@ public class WrongSubjectServiceImpl extends ServiceImpl<WrongSubjectDao, WrongS
         return wrongSubjectVoList.subList(0, 4);
     }
 
-    /**
-     * 删除redis中的错题 定时任务 每30min删除
-     *
-     */
 
-//    public void deleteWrongSubject() {
-//        Set<String> keys = redisTemplate.keys(WrongSubjectConstant.WRONG_SUBJECT_PREFIX_KEY_REGULATION);
-//        for (String key : keys) {
-//            System.out.println(key);
-//        }
-//        if (CollectionUtils.isNotEmpty(keys)) {
-//            redisTemplate.delete(keys);
-//        }
-//    }
 
 }
 

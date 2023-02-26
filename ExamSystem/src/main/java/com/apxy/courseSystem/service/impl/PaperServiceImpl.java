@@ -47,8 +47,6 @@ public class PaperServiceImpl extends ServiceImpl<PaperDao, PaperEntity> impleme
     @Autowired
     private SubjectPaperService subjectPaperService;
     @Autowired
-    private SpringSecurityUtil springSecurityUtil;
-    @Autowired
     private SubjectService subjectService;
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
@@ -78,7 +76,7 @@ public class PaperServiceImpl extends ServiceImpl<PaperDao, PaperEntity> impleme
         );
         List<PaperEntity> records = page.getRecords();
         records = records.stream().filter(o -> {
-            return o.getTeacherId().intValue() == springSecurityUtil.getUser().getMemberEntity().getId();
+            return o.getTeacherId().intValue() == SpringSecurityUtil.getUser().getMemberEntity().getId();
         }).collect(Collectors.toList());
         page.setRecords(records);
         return new PageUtils(page);
@@ -124,10 +122,13 @@ public class PaperServiceImpl extends ServiceImpl<PaperDao, PaperEntity> impleme
         PaperEntity paperEntity = this.getById(id);
         //首先根据试卷id 获得所有的试卷题目关联类(SubjectPaper）
         List<SubjectPaper> subjectPapers = subjectPaperService.list(new LambdaQueryWrapper<SubjectPaper>().eq(SubjectPaper::getPaperId, id));
-        //健壮性判断
-        if (subjectPapers != null && subjectPapers.size() > 0) {
+
+        if (org.springframework.util.CollectionUtils.isEmpty(subjectPapers)) {
             //获得所有的题目id
-            List<Long> subjectIds = subjectPapers.stream().map(SubjectPaper::getSubjectId).collect(Collectors.toList());
+            List<Long> subjectIds = subjectPapers
+                    .stream()
+                    .map(SubjectPaper::getSubjectId)
+                    .collect(Collectors.toList());
             //健壮性判断
             if (subjectIds.size() > 0) {
                 //获得所有的题目
@@ -136,35 +137,38 @@ public class PaperServiceImpl extends ServiceImpl<PaperDao, PaperEntity> impleme
                 List<SubjectVoEntity> subjectVoEntities = this.changeSubjectOrder(subjectEntities);
                 //将所有的题目存储到redis中  采用的数据结构为list
                 String key = this.getKey();
-                subjectVoEntities.forEach(o -> {
-                    stringRedisTemplate.opsForList().rightPush(key, JSON.toJSONString(o));
+                subjectVoEntities.forEach(subjectVo -> {
+                    stringRedisTemplate.opsForList().rightPush(key, JSON.toJSONString(subjectVo));
                 });
                 //设置过期时间
                 stringRedisTemplate.expire(key, paperEntity.getTotalTime() + 1, TimeUnit.MINUTES);
                 //返回所有题目 并且告知前端可以答题
                 return subjectVoEntities;
+            } else {
+                return Collections.emptyList();
             }
+        } else {
+            return Collections.emptyList();
         }
-        return null;
     }
 
     /**
      * 修改题目 并且获得下一题
-     *
-     * @param subjectVoEntity
-     * @param index
+     * @param subjectVoEntity 当前题目
+     * @param index 当前题目索引
      * @return
      */
     @Override
     public SubjectVoEntity getNextSubject(SubjectVoEntity subjectVoEntity, Long index) {
+        String[] selectedChoice = subjectVoEntity.getSelectedChoice();
         //如果该题目是多选题 那么需要将其答案['A','B','C'] 转化为ABC
-        if (subjectVoEntity.getSelectedChoice() != null && subjectVoEntity.getSelectedChoice().length > 0) {
+        if (selectedChoice != null && selectedChoice.length > 0) {
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < subjectVoEntity.getSelectedChoice().length; i++) {
                 sb.append(subjectVoEntity.getSelectedChoice()[i]);
             }
             String ret = sb.toString();
-            subjectVoEntity.setSelectAnswer(new String(ret));
+            subjectVoEntity.setSelectAnswer(ret);
         }
         String key = this.getKey();
         this.changeSubject(index - 1, subjectVoEntity);
@@ -357,7 +361,7 @@ public class PaperServiceImpl extends ServiceImpl<PaperDao, PaperEntity> impleme
 
         Boolean aBoolean = stringRedisTemplate.hasKey(this.getKey());
         //获得当前学生id
-        Integer id = springSecurityUtil.getUser().getMemberEntity().getId();
+        Integer id = SpringSecurityUtil.getUser().getMemberEntity().getId();
         System.out.println(id);
         //获得当前学生所有做过的试卷
         List<DonePaperEntity> donePaperEntities = donePaperService.list(new LambdaQueryWrapper<DonePaperEntity>().eq(DonePaperEntity::getStudentId, id));
@@ -568,7 +572,7 @@ public class PaperServiceImpl extends ServiceImpl<PaperDao, PaperEntity> impleme
      * @return 当前线程用户实体类
      */
     private MemberEntity getMemberEntity() {
-        return springSecurityUtil.getUser().getMemberEntity();
+        return SpringSecurityUtil.getUser().getMemberEntity();
     }
 
     /**

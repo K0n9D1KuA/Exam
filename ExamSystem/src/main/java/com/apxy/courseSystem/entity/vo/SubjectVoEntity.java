@@ -15,7 +15,6 @@ public class SubjectVoEntity implements Serializable {
     /**
      * 主键
      */
-    @TableId(value = "id", type = IdType.AUTO)
     private Long id;
     /**
      * 题目描述
@@ -63,7 +62,7 @@ public class SubjectVoEntity implements Serializable {
     private String selectAnswer = "";
 
     /**
-     *
+     * 题目是否被做过
      */
     private Boolean doOrNoDo = false;
 

@@ -26,8 +26,7 @@ import com.apxy.courseSystem.util.usingUtil.Query;
 
 @Service("subjectService")
 public class SubjectServiceImpl extends ServiceImpl<SubjectDao, SubjectEntity> implements SubjectService {
-    @Autowired
-    private SpringSecurityUtil springSecurityUtil;
+
     @Autowired
     private MemberService memberService;
 
@@ -44,7 +43,7 @@ public class SubjectServiceImpl extends ServiceImpl<SubjectDao, SubjectEntity> i
         if (key != null && !"".equals(key)) {
             lambdaQueryWrapper.like(SubjectEntity::getSubjectName, key);
         }
-        lambdaQueryWrapper.eq(SubjectEntity::getTeacherId, springSecurityUtil.getUser().getMemberEntity().getId());
+        lambdaQueryWrapper.eq(SubjectEntity::getTeacherId, SpringSecurityUtil.getUser().getMemberEntity().getId());
         IPage<SubjectEntity> page = this.page(
                 new Query<SubjectEntity>().getPage(params),
                 lambdaQueryWrapper
@@ -55,7 +54,7 @@ public class SubjectServiceImpl extends ServiceImpl<SubjectDao, SubjectEntity> i
 
     @Override
     public void saveSubject(SubjectEntity subject) {
-        Integer id = springSecurityUtil.getUser().getMemberEntity().getId();
+        Integer id = SpringSecurityUtil.getUser().getMemberEntity().getId();
         subject.setTeacherId(id.longValue());
         this.save(subject);
     }

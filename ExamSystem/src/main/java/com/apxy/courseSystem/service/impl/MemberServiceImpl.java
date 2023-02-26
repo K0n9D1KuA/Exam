@@ -53,8 +53,6 @@ public class MemberServiceImpl extends ServiceImpl<MemberDao, MemberEntity> impl
     private RoleService roleService;
     @Autowired
     private StudentTeacherServiceImpl studentTeacherService;
-    @Autowired
-    private SpringSecurityUtil springSecurityUtil;
 
     @Override
     public PageUtils queryPage(Map<String, Object> params) {
@@ -189,7 +187,7 @@ public class MemberServiceImpl extends ServiceImpl<MemberDao, MemberEntity> impl
      */
     @Override
     public List<MemberEntity> getAllStudents() {
-        Long teacherId = Long.valueOf(springSecurityUtil.getUser().getMemberEntity().getId());
+        Long teacherId = Long.valueOf(SpringSecurityUtil.getUser().getMemberEntity().getId());
         List<StudentTeacherEntity> studentTeacherEntities = studentTeacherService.list(new LambdaQueryWrapper<StudentTeacherEntity>().eq(StudentTeacherEntity::getTeacherId, teacherId));
         //健壮性判断
         if (studentTeacherEntities != null && studentTeacherEntities.size() > 0) {
@@ -202,7 +200,7 @@ public class MemberServiceImpl extends ServiceImpl<MemberDao, MemberEntity> impl
 
     @Override
     public PageUtils queryAllStudents(Map<String, Object> params) {
-        Long teacherId = Long.valueOf(springSecurityUtil.getUser().getMemberEntity().getId());
+        Long teacherId = Long.valueOf(SpringSecurityUtil.getUser().getMemberEntity().getId());
         List<StudentTeacherEntity> studentTeacherEntities = studentTeacherService.list(new LambdaQueryWrapper<StudentTeacherEntity>().eq(StudentTeacherEntity::getTeacherId, teacherId));
         if (studentTeacherEntities != null && studentTeacherEntities.size() > 0) {
             //获得所有学生
@@ -215,25 +213,6 @@ public class MemberServiceImpl extends ServiceImpl<MemberDao, MemberEntity> impl
 
     @Override
     public PageUtils queryAllStudentsWithTeacher(Map<String, Object> params) {
-//        IPage<MemberEntity> page = this.page(
-//                new Query<MemberEntity>().getPage(params),
-//                new QueryWrapper<MemberEntity>()
-//        );
-
-//        if(params.get(Constant.PAGE) != null){
-//            curPage = Long.parseLong((String)params.get(Constant.PAGE));
-//        }
-//        if(params.get(Constant.LIMIT) != null){
-//            limit = Long.parseLong((String)params.get(Constant.LIMIT));
-//        }
-//        IPage<MemberVo> ret = new Page<>();
-//        ret.setCurrent(Long.parseLong((String) params.get(Constant.PAGE)));
-//        ret.setSize(Long.parseLong((String) params.get("pageSize")));
-//        List<MemberVo> retList = this.baseMapper.getAllStudentsWithTeacher();
-//        ret.setRecords(retList);
-//        ret.setTotal(retList.size());
-//        ret.setPages(retList.size() / ret.getSize() + 1);
-//        return new PageUtils(ret);
         Page<MemberVo> ret = new Page<>(Long.parseLong((String) params.get(Constant.PAGE)), Long.parseLong((String) params.get("pageSize")));
         IPage<MemberVo> result = this.baseMapper.getAllStudentsWithTeacher(ret);
         return new PageUtils(result);

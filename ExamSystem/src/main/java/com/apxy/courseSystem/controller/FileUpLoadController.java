@@ -26,8 +26,7 @@ public class FileUpLoadController {
     UploadService uploadService;
     @Autowired
     MemberService memberService;
-    @Autowired
-    SpringSecurityUtil springSecurityUtil;
+
     @Autowired
     DoneSubjectService doneSubjectService;
 

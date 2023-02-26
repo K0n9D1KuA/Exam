@@ -42,8 +42,7 @@ public class SubjectController {
 //    OSS ossClient;
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
-    @Autowired
-    private SpringSecurityUtil springSecurityUtil;
+
 
 
     /**
@@ -131,7 +130,7 @@ public class SubjectController {
     public R generatingPapers(@RequestBody List<Long> subjectTypes) {
         List<SubjectEntity> list = subjectService.list(new LambdaQueryWrapper<SubjectEntity>().in(SubjectEntity::getSubjectType, subjectTypes));
         //封装
-        String key = AuthServerConstant.PAPER_PREFIX_KEY + this.springSecurityUtil.getUserName();
+        String key = AuthServerConstant.PAPER_PREFIX_KEY + SpringSecurityUtil.getUserName();
         Collections.shuffle(list);
 
         return R.ok().put("data", list.stream().map(o -> {
@@ -150,7 +149,7 @@ public class SubjectController {
 
     @GetMapping("/submitSubject")
     public R submitSubject() {
-        String key = AuthServerConstant.PAPER_PREFIX_KEY + this.springSecurityUtil.getUserName();
+        String key = AuthServerConstant.PAPER_PREFIX_KEY + SpringSecurityUtil.getUserName();
         //获得所有题目
         //首先获得size
         Long size = stringRedisTemplate.opsForList().size(key);
@@ -184,7 +183,7 @@ public class SubjectController {
         stringRedisTemplate.delete(key);
         //返回数据
         int actualScore = 0;
-        Long studentId = Long.valueOf(springSecurityUtil.getUser().getMemberEntity().getId());
+        Long studentId = Long.valueOf(SpringSecurityUtil.getUser().getMemberEntity().getId());
         //算一下得了多少分 并且存入数据库中
         List<DonePracticeSubject> donePracticeSubjects = new ArrayList<>();
 

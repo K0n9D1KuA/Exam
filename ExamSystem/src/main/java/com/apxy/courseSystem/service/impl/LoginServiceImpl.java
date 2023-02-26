@@ -21,10 +21,8 @@ import java.util.stream.Collectors;
 
 @Service
 public class LoginServiceImpl implements LoginService {
-    @Autowired
-    private AuthenticationManager authenticationManager;
-    @Autowired
-    private StringRedisTemplate stringRedisTemplate;
+
+
     @Autowired
     private MemberService memberService;
     @Autowired
